@@ -4,9 +4,6 @@
   text-decoration: none;
 }
 
-@mixin linkHover {
-  color: $primaryHover;
-}
 // Mixin End
 
 // Html
@@ -46,7 +43,7 @@ footer,
 .contact-info,
 .foot-icons {
   a:hover {
-    @include link($linkHover);
+    @include link($primaryHover);
   }
 }
 
