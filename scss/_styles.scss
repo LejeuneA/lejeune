@@ -1,5 +1,5 @@
 // Mixin
-@mixin link($color){
+@mixin link($color) {
   color: $color;
   text-decoration: none;
 }
@@ -10,22 +10,24 @@
 * {
   box-sizing: border-box;
 }
+
 // Html End
 
 // Header
 .main-header-logo {
-  color: $primary;
-  text-decoration: none;
+  @include link($primary);
 }
 
-a.resume {
-  background-color: $primary;
+.resume {
+  a {
+    background-color: $primary;
+  }
+
+  a:hover {
+    background-color: $secondary;
+  }
 }
 
-a.resume:hover {
-  background-color: $secondary;
-  transition-delay: 20ms;
-}
 // Header End
 
 // Contact and Footer
@@ -36,12 +38,7 @@ footer,
   a {
     @include link($secondary);
   }
-}
 
-nav ul li,
-footer,
-.contact-info,
-.foot-icons {
   a:hover {
     @include link($primaryDarker);
   }
