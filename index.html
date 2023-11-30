@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+
+    <!-- Title -->
+    <title>Acelya Lejeune - Développeur Web et Infographiste</title>
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" type="image/icon" href="/assets/icons/favicon.gif" />
+
+    <!-- Font Awasome -->
+    <script src="https://kit.fontawesome.com/3546d47201.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header m-1 p-1">
+        <a class="main-header-logo text-uppercase fs-2 fw-bold fst-italic" href="index.html">&lt;/lejeune&gt;</a>
+        <nav class="main-nav">
+            <ul class="main-nav-items list-unstyled">
+                <li class="main-nav-item"><a href="index.html">Home</a></li>
+                <li class="main-nav-item"><a href="#profil">Profil</a></li>
+                <li class="main-nav-item"><a href="#interests">Interest</a></li>
+                <li class="main-nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Profil -->
+        <section class="p-4">
+            <p class="h1" id="profil">Profil</p>
+            <h3>Açelya Lejeune <br>
+                <small class="text-muted"><i>Développeur Web et Infographiste</i></small>
+            </h3>
+            <a class="resume btn btn-md text-capitalize text-white m-1 p-1"
+                href="assets/download/CV_LEJEUNE_WEB_DEVELOPER.pdf" download>download resume</a>
+            <div class="profile-text">
+                <p>
+                    Je m’appelle Acelya Lejeune. J’ai 43 ans. Je travaille comme graphiste professionnelle depuis 20
+                    ans. J’ai travaillé dans des sociétés numériques et des imprimeries à Antalya en Turquie et dans le
+                    nord de Chypre. Je me suis installée en Angleterre en 2019 et j’ai créé ma propre entreprise. Plus
+                    tard, je me suis mariée en 2020 et je me suis installée en Belgique. Je vis actuellement en
+                    Belgique.
+                </p>
+                <p>
+                    J’ai fait de nombreuses créations et celles-ci ont été imprimées et mises à la disposition des
+                    clients. Je peux gérer toutes les étapes de la conception et de l’impression. Grâce à mes études,
+                    j’ai eu l’opportunité de travailler dans d’autres pays. Cela m’a permis de me spécialiser dans
+                    l’infographie en utilisant <span class="fw-bolder">Adobe Photoshop, Illustrator et Indesign.</span>
+                </p>
+                <p>
+                    Par ailleurs, mes expériences dans les métiers que j’ai fait m’ont permis d’acquérir des
+                    connaissances approfondies en anglais. En effet, je parle anglais couramment. Je suis une personne
+                    qui peut facilement apprendre et se perfectionner seule. Être concepteur de sites web a toujours été
+                    une curiosité pour moi, mais c'est aujourd'hui ma plus grande passion.
+                </p>
+            </div>
+        </section>
+        <!-- Interests -->
+        <section class="p-4">
+            <p class="h1" id="interests">Interests</p>
+            <div class="interests-text">
+                <p> J’aime jouer au squash, le cinéma international, voyager en europe, cuisiner des repas de différents
+                    pays. J’apprécie beaucoup m’occuper d’animaux, lire des classiques de la langue français. Je crée
+                    des amigurumis (animaux et figurines faites au crochet). Je peins sur toile des paysages marins et
+                    des créations modernes.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- Contact -->
+    <aside class="p-4">
+        <p class="h1" id="contact">Contact</p>
+        <div class="contact-form">
+            <form action="register.php">
+                <div>
+                    <label for="fname">Prénom:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Entrez votre prénom...">
+                </div>
+                <div>
+                    <label for="lname">Nom:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Entrez votre nom...">
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="user_email" name="user_email" placeholder="Entrez votre email..."> <br>
+                    <button type="submit">Sauvegarder</button>
+                </div>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" placeholder=" Rédiger votre message? "></textarea><br>
+                </div>
+                <div>
+                    <button type="reset">Réinitialiser</button>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-info">
+            <p class="h4">phone</p>
+            +32 49 338 77 29
+            <p class="h4">email</p>
+            <a href="mailto:acelyalejeune@gmail.com">acelyalejeune@gmail.com</a>
+        </div>
+        <div class="foot-icons">
+            <a href="https://github.com/LejeuneA"><i class="fa fa-2x fa-github-square" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/acelyalejeune"><i class="fa fa-2x fa-linkedin-square"
+                    aria-hidden="true"></i></a>
+            </ul>
+        </div>
+    </aside>
+    <!-- Footer -->
+    <footer class="text-center form-select-sm">
+        <p>
+            &copy; copyright Açelya Lejeune. <br> conception et développement par <a class="text-decoration-none"
+                href="https://github.com/LejeuneA"><i class="fa fa-github" aria-hidden="true"></i> Açelya Lejeune</a>
+        </p>
+    </footer>
+</body>
+
+</html>
