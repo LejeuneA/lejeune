@@ -43,7 +43,7 @@ footer,
 .contact-info,
 .foot-icons {
   a:hover {
-    @include link($primaryHover);
+    @include link($primaryDarker);
   }
 }
 
