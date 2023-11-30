@@ -1,6 +1,6 @@
 // Mixin
 @mixin link($color){
-
+  color: $color;
   text-decoration: none;
 }
 
@@ -22,7 +22,7 @@
 }
 
 a.resume {
-  @include link($secondary);
+  background-color: $primary;
 }
 
 a.resume:hover {
@@ -37,7 +37,7 @@ footer,
 .contact-info,
 .foot-icons {
   a {
-    @include link;
+    @include link($secondary);
   }
 }
 
@@ -46,7 +46,7 @@ footer,
 .contact-info,
 .foot-icons {
   a:hover {
-    @include linkHover;
+    @include link($linkHover);
   }
 }
 
