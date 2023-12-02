@@ -14,8 +14,9 @@
 // Html End
 
 // Header
-.navbar-brand, .navbar-brand:hover {
-    color: $primary;
+.navbar-brand,
+.navbar-brand:hover {
+  color: $primary;
 }
 
 .resume {
@@ -30,7 +31,40 @@
 
 // Header End
 
+// Form
+input.form-control,
+textarea.form-control {
+  &::placeholder {
+    font-style: italic;
+    font-size: small;
+  }
+  &:focus {
+    box-shadow: 0 0 10px rgba(5, 173, 199, 0.9);
+    border-color: $secondaryLighter;
+  }
+}
+
+form button {
+  &.btn {
+    background-color: $secondary;
+    color: white;
+  }
+
+  &.btn:hover {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+// Form End
+
 // Contact and Footer
+.contact-info {
+  i {
+    color: $secondary;
+  }
+}
+
 nav ul li,
 footer,
 .contact-info,
