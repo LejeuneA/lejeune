@@ -2,6 +2,7 @@
 $primary: #F30A49;
 $primaryDarker: #c4083a;
 $secondary: #04879C;
+$secondaryLighter: #05adc7;
 $blue: #0C3C78;
 $dark: #090030;
 $grayLight:$gray-100;
@@ -12,6 +13,11 @@ $grayLight:$gray-100;
 $body-bg: $white;
 $body-color: $gray-800;
 $font-family-sans-serif:'Poppins', sans-serif;
+
+// Form
+$form-label-color:$secondary;
+$input-placeholder-color:$gray-500;
+// Form End
 
 
 
