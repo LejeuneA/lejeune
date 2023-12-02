@@ -14,8 +14,8 @@
 // Html End
 
 // Header
-.main-header-logo {
-  @include link($primary);
+.navbar-brand, .navbar-brand:hover {
+    color: $primary;
 }
 
 .resume {
