@@ -13,20 +13,32 @@
 // Html End
 
 // Header
+header.main-header {
+  nav.navbar {
+    ul.navbar-nav {
+      li.nav-item {
+        &:last-child {
+          a.navbar-link {
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-decoration: none;
+            background-color: $primary;
+            color: #fff;
+
+            &:hover {
+              background-color: $secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .navbar-brand,
 .navbar-brand:hover {
   color: $primary;
-}
-
-nav ul li {
-  &:last-child {
-    a {
-      color: $primary;
-    }
-    a:hover {
-      color: $secondary;
-    }
-  }
 }
 
 .resume {
