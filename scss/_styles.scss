@@ -10,13 +10,23 @@
 * {
   box-sizing: border-box;
 }
-
 // Html End
 
 // Header
 .navbar-brand,
 .navbar-brand:hover {
   color: $primary;
+}
+
+nav ul li {
+  &:last-child {
+    a {
+      color: $primary;
+    }
+    a:hover {
+      color: $secondary;
+    }
+  }
 }
 
 .resume {
@@ -28,7 +38,6 @@
     background-color: $secondary;
   }
 }
-
 // Header End
 
 // Form
