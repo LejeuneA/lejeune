@@ -20,12 +20,11 @@ header.main-header {
       li.nav-item {
         &:last-child {
           a.navbar-link {
+            @include link(#fff);
             padding: 8px 15px;
             border: 1px solid #ccc;
             border-radius: 8px;
-            text-decoration: none;
             background-color: $primary;
-            color: #fff;
 
             &:hover {
               background-color: $secondary;
@@ -35,22 +34,23 @@ header.main-header {
       }
     }
   }
-}
 
-.navbar-brand,
-.navbar-brand:hover {
-  color: $primary;
-}
-
-.resume {
-  a {
-    background-color: $primary;
+  .navbar-brand,
+  .navbar-brand:hover {
+    @include link($primary);
   }
 
-  a:hover {
-    background-color: $secondary;
+  .resume {
+    a {
+      background-color: $primary;
+
+      &:hover {
+        background-color: $secondary;
+      }
+    }
   }
 }
+
 
 // Header End
 
@@ -63,7 +63,7 @@ header.main-header {
   background: url(/assets/img/welcome-banner.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh; // Use 100vh for full viewport height
+  height: 100vh;
 }
 
 // Welcome Hero End
@@ -72,13 +72,13 @@ header.main-header {
 .header-text {
   h2 {
     color: #fff;
-    font-size: 3.5rem; // Default font-size
-    font-weight: 700; // Default font-weight
+    font-size: 3.5rem;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 1.5;
 
     span {
-      color: $primary; // Assuming you have defined $primary elsewhere in your SCSS
+      color: $primary;
     }
   }
 
@@ -90,37 +90,29 @@ header.main-header {
     margin: 30px 0 60px;
     letter-spacing: 1px;
   }
-}
 
-// Responsive font-size adjustments
-@media (max-width: 767px) {
-  .header-text {
+  // Responsive font-size adjustments
+  @media (max-width: 767px) {
     h2 {
-      font-size: 2.5rem; // Adjust font-size for smaller screens
+      font-size: 2.5rem;
     }
   }
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .header-text {
+  @media (min-width: 768px) and (max-width: 991px) {
     h2 {
-      font-size: 3rem; // Adjust font-size for medium-sized screens
+      font-size: 3rem;
     }
   }
-}
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .header-text {
+  @media (min-width: 992px) and (max-width: 1199px) {
     h2 {
-      font-size: 3.2rem; // Adjust font-size for larger screens
+      font-size: 3.2rem;
     }
   }
-}
 
-@media (min-width: 1200px) {
-  .header-text {
+  @media (min-width: 1200px) {
     h2 {
-      font-size: 3.5rem; // Default font-size for extra-large screens
+      font-size: 3.5rem;
     }
   }
 }
@@ -141,19 +133,14 @@ textarea.form-control {
   }
 }
 
-form button {
-  &.btn {
-    background-color: $secondary;
-    color: white;
-  }
+form button.btn {
+  background-color: $secondary;
+  color: white;
 
-  &.btn:hover {
+  &:hover {
     background-color: $primary;
-    color: white;
   }
 }
-
-// Form End
 
 // Contact and Footer
 .contact-info {
@@ -168,10 +155,10 @@ footer,
 .foot-icons {
   a {
     @include link($secondary);
-  }
 
-  a:hover {
-    @include link($primaryDarker);
+    &:hover {
+      @include link($primaryDarker);
+    }
   }
 }
 
