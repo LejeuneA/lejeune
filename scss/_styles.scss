@@ -54,17 +54,17 @@ header.main-header {
 
 // Header End
 
-// Welcome Hero
 .welcome-hero {
   @extend .d-flex;
   @extend .align-items-center;
   @extend .justify-content-center;
   position: relative;
   background: url(../assets/img/welcome-banner.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   height: 100vh; // Use 100vh for full viewport height
 }
+
 
 
 // Welcome Hero End
