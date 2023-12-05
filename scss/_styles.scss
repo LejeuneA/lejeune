@@ -10,6 +10,7 @@
 * {
   box-sizing: border-box;
 }
+
 // Html End
 
 // Header
@@ -50,20 +51,21 @@ header.main-header {
     background-color: $secondary;
   }
 }
+
 // Header End
 
 // Welcome Hero
-// Welcome Hero
 .welcome-hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
   position: relative;
   background: url(/assets/img/welcome-banner.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 690px;
 }
+
 // Welcome Hero End
 
 // Header-text-area
@@ -76,7 +78,7 @@ header.main-header {
     line-height: 1.5;
 
     span {
-      color: $primary;
+      color: $primary; // Assuming you have defined $primary elsewhere in your SCSS
     }
   }
 
@@ -89,6 +91,7 @@ header.main-header {
     letter-spacing: 1px;
   }
 }
+
 // Header-text-area End
 
 // Form
@@ -98,6 +101,7 @@ textarea.form-control {
     font-style: italic;
     font-size: small;
   }
+
   &:focus {
     box-shadow: 0 0 10px rgba(5, 173, 199, 0.9);
     border-color: $secondaryLighter;
