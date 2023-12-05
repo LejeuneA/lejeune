@@ -52,6 +52,45 @@ header.main-header {
 }
 // Header End
 
+// Welcome Hero
+// Welcome Hero
+.welcome-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url(/assets/img/welcome-banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 690px;
+}
+// Welcome Hero End
+
+// Header-text-area
+.header-text {
+  h2 {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 30px 0 60px;
+    letter-spacing: 1px;
+  }
+}
+// Header-text-area End
+
 // Form
 input.form-control,
 textarea.form-control {
