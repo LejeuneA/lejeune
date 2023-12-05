@@ -61,10 +61,12 @@ header.main-header {
   @extend .justify-content-center;
   position: relative;
   background: url(../assets/img/welcome-banner.jpg) no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   height: 100vh; // Use 100vh for full viewport height
+  background-color: lightgray; // Add a fallback color
 }
+
 
 // Welcome Hero End
 
@@ -78,7 +80,7 @@ header.main-header {
     line-height: 1.5;
 
     span {
-      color: $primary; // Assuming you have defined $primary elsewhere in your SCSS
+      color: $primary; 
     }
   }
 
