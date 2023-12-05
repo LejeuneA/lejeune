@@ -70,3 +70,4 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 8. Add additional custom code here
 @import "styles";
+@import "responsive";
