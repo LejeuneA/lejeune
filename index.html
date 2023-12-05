@@ -111,37 +111,61 @@
         <!-- Profile End -->
 
         <!-- Skills -->
-        <div id="compétences" class="bg-dark text-white py-5">
-            <div class="container">
-                <div class="skills">
-                    <p class="h1">Compétences</p>
+        <section id="compétences" class="text-white py-5">
+            <div class="skills">
+                <div class="section-heading text-center">
+                    <h1>Compétences</h1>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <section class="single-skill-content">
+                                <div class="barWrapper">
+                                    <span class="progressText">adobe photoshop</span>
+                                    <div class="single-progress-txt">
+                                        <div class="progress ">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                aria-valuemin="10" aria-valuemax="100" style="">
+                                            </div>
+                                        </div>
+                                        <h3>90%</h3>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Skills End -->
 
         <!-- Interests -->
-        <div id="interests" class="bg-light py-5">
+        <section id="interests" class="bg-light py-5">
             <div class="container">
                 <p class="h1">Interests</p>
                 <hr>
                 <h5>Divers Centres d'Intérêt et Loisirs</h5>
                 <div class="interests-text">
-                    <p> &bull;Le squash, c'est pour moi une combinaison parfaite de sport et de divertissement. </p>
-                    <p> &bull;Mon intérêt pour les cuisines du monde me permet de découvrir et d'expérimenter les
+                    <p> &bull;Le squash, c'est pour moi une combinaison parfaite de sport et de
+                        divertissement. </p>
+                    <p> &bull;Mon intérêt pour les cuisines du monde me permet de découvrir et
+                        d'expérimenter les
                         saveurs de
                         différentes cultures dans ma propre cuisine. </p>
-                    <p> &bull;L'art de l'amigurumi me permet de créer de petites créatures colorées en cotton. </p>
-                    <p> &bull;Grâce à la peinture sur toile, je donne vie à des paysages marins et à l'art moderne, une
+                    <p> &bull;L'art de l'amigurumi me permet de créer de petites créatures colorées
+                        en cotton. </p>
+                    <p> &bull;Grâce à la peinture sur toile, je donne vie à des paysages marins et à
+                        l'art moderne, une
                         expression de mon
                         voyage
                         artistique.
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <!-- Interests End -->
+    
     <!-- Contact -->
     <div id="contact" class="bg-light py-5">
         <div class="container">
@@ -173,7 +197,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message:</label>
-                    <textarea name="message" id="message" class="form-control" placeholder="Rédiger votre message?"
+                    <textarea name="message" id="message" class="form-control" placeholder="Rédigez votre message..."
                         rows="5"></textarea>
                 </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-md-start">
@@ -222,6 +246,15 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 
+    <!-- for progress bar start-->
+
+    <!-- progressbar js -->
+    <script src="assets/js/progressbar.js"></script>
+
+    <!-- appear js -->
+    <script src="assets/js/jquery.appear.js"></script>
+
+    <!-- for progress bar end -->
 </body>
 
 </html>
