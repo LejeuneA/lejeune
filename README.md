@@ -1,3 +1,3 @@
 # Acelya Lejeune
-[Web Site]
-(lejeunea.github.io/lejeune)
+Web Site
+https://www.lejeunea.github.io/lejeune
